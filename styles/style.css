@@ -1,0 +1,346 @@
+:root {
+  --app-bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-soft: #eef3f8;
+  --text: #1c2430;
+  --muted: #657184;
+  --border: #dbe3ee;
+  --brand: #176b87;
+  --brand-strong: #104d61;
+  --accent: #d97706;
+  --success: #138a5a;
+  --danger: #c2413c;
+  --shadow: 0 14px 36px rgba(17, 24, 39, 0.08);
+}
+
+[data-theme="dark"] {
+  --app-bg: #101418;
+  --surface: #171d23;
+  --surface-soft: #202832;
+  --text: #edf2f7;
+  --muted: #aeb9c7;
+  --border: #313b47;
+  --brand: #3aa6b9;
+  --brand-strong: #65c7d8;
+  --accent: #f2a541;
+  --success: #38b77e;
+  --danger: #ef706b;
+  --shadow: 0 16px 42px rgba(0, 0, 0, 0.32);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--app-bg);
+  color: var(--text);
+  font-family: Inter, sans-serif;
+}
+
+a {
+  color: var(--brand);
+}
+
+.auth-page {
+  background:
+    linear-gradient(135deg, rgba(23, 107, 135, 0.11), transparent 32%),
+    linear-gradient(225deg, rgba(217, 119, 6, 0.09), transparent 28%),
+    var(--app-bg);
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(23, 107, 135, 0.12), transparent 34%),
+    linear-gradient(225deg, rgba(217, 119, 6, 0.1), transparent 30%),
+    var(--app-bg);
+}
+
+.navbar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  color: var(--text);
+}
+
+.navbar-brand,
+.brand-mark {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.brand-icon {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--brand);
+  color: #fff;
+}
+
+.hero {
+  min-height: calc(100vh - 82px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.hero-visual {
+  min-height: 440px;
+  border-radius: 8px;
+  background:
+    url("../assets/Business_Meeting_Lottie_Animation.svg") center/cover;
+  box-shadow: var(--shadow);
+}
+
+.hero h1 {
+  max-width: 780px;
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 1;
+  font-weight: 850;
+  letter-spacing: 0;
+}
+
+.hero p {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.btn-brand {
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: var(--brand-strong);
+  --bs-btn-hover-border-color: var(--brand-strong);
+  --bs-btn-color: #fff;
+}
+
+.btn-outline-brand {
+  --bs-btn-color: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: var(--brand);
+  --bs-btn-hover-border-color: var(--brand);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: var(--brand);
+  --bs-btn-active-border-color: var(--brand);
+  --bs-btn-active-color: #fff;
+}
+
+.theme-toggle .btn {
+  min-width: 44px;
+}
+
+.auth-shell {
+  min-height: calc(100vh - 82px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.auth-shell-tall {
+  align-items: flex-start;
+}
+
+.auth-card {
+  width: min(100%, 460px);
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.register-card {
+  width: min(100%, 760px);
+}
+
+.auth-intro {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.auth-intro .brand-icon {
+  margin-bottom: 1rem;
+}
+
+.auth-intro h1 {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.auth-intro p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.card,
+.modal-content,
+.dropdown-menu {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.card-header,
+.modal-header,
+.modal-footer {
+  background: var(--surface-soft);
+  border-color: var(--border);
+}
+
+.form-label,
+.modal-title,
+.card-header h2 {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-control.input-active,
+.form-select.input-active {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 0.2rem rgba(194, 65, 60, 0.16);
+}
+
+.form-control::placeholder {
+  color: var(--muted);
+}
+
+.field-message {
+  min-height: 1.25rem;
+  margin-top: 0.35rem;
+  color: var(--danger);
+  font-size: 0.86rem;
+}
+
+.stat-card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.stat-icon {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--surface-soft);
+  color: var(--brand);
+  font-size: 1.35rem;
+}
+
+.stat-card p {
+  margin: 0 0 0.2rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.stat-card strong {
+  color: var(--text);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.table {
+  --bs-table-bg: var(--surface);
+  --bs-table-color: var(--text);
+  --bs-table-border-color: var(--border);
+  --bs-table-striped-bg: var(--surface-soft);
+  --bs-table-striped-color: var(--text);
+}
+
+.table-light {
+  --bs-table-bg: var(--surface-soft);
+  --bs-table-color: var(--text);
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+#participantsList {
+  border-color: var(--border) !important;
+  background: var(--surface-soft);
+  color: var(--text);
+  max-height: 180px;
+  overflow: auto;
+}
+
+.swal2-popup {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border);
+}
+
+.swal2-confirm {
+  background: var(--brand) !important;
+}
+
+.swal2-cancel {
+  background: var(--muted) !important;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 2rem 0;
+    align-items: flex-start;
+  }
+
+  .hero-visual {
+    min-height: 260px;
+    margin-top: 1.5rem;
+  }
+
+  .navbar .container {
+    gap: 0.75rem;
+  }
+
+  .navbar .d-flex {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .auth-card {
+    padding: 1.25rem;
+  }
+
+  .auth-intro h1 {
+    font-size: 1.65rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+  }
+}

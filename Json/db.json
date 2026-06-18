@@ -1,0 +1,230 @@
+{
+  "users": [
+    {
+      "name": "hector",
+      "email": "hector@gmail.com",
+      "password": "123456789@hH",
+      "department": "IT",
+      "designation": "Manager",
+      "dateOfJoin": "2026-06-09",
+      "id": "RhhXOQ1hsXc"
+    },
+    {
+      "name": "lalo",
+      "email": "lalo@gmail.com",
+      "password": "123456789@lL",
+      "department": "Marketing",
+      "designation": "Manager",
+      "dateOfJoin": "2026-06-09",
+      "id": "fhwGeiIAgaY"
+    },
+    {
+      "name": "gus",
+      "email": "gus@gmail.com",
+      "password": "123456789@gG",
+      "department": "IT",
+      "designation": "Team Lead",
+      "dateOfJoin": "2026-06-02",
+      "id": "fl8XXn3Rf1Y"
+    },
+    {
+      "name": "walter",
+      "email": "walter@gmail.com",
+      "password": "123456789@wW",
+      "department": "IT",
+      "designation": "Tester",
+      "dateOfJoin": "2026-06-02",
+      "id": "g8GME_7hXXk"
+    },
+    {
+      "name": "tuco",
+      "email": "tuco@gmail.com",
+      "password": "123456789@tT",
+      "department": "Finance",
+      "designation": "Accountant",
+      "dateOfJoin": "2026-06-09",
+      "id": "RhhXOQ1hsXc"
+    },
+    {
+      "name": "jesse",
+      "email": "jesse@gmail.com",
+      "password": "123456789@jJ",
+      "department": "Finance",
+      "designation": "Accountant",
+      "dateOfJoin": "2023-02-06",
+      "id": "ipJ4kdG"
+    },
+    {
+      "name": "mike",
+      "email": "mike@gmail.com",
+      "password": "123456789@mM",
+      "department": "Marketing",
+      "designation": "Marketing Executive",
+      "dateOfJoin": "2025-03-18",
+      "id": "PRdmuT9Qe4I"
+    },
+    {
+      "name": "nacho",
+      "email": "nacho@gmail.com",
+      "password": "123456789@nN",
+      "department": "Marketing",
+      "designation": "Marketing Executive",
+      "dateOfJoin": "2023-06-18",
+      "id": "uDf1LP4QHYk"
+    }
+  ],
+  "meetings": [
+    {
+      "title": "technical resource",
+      "description": "available resource and allocation",
+      "date": "2026-06-19",
+      "time": "09:00",
+      "duration": "30 minutes",
+      "room": "Floor 2 - Room 201",
+      "type": "Monthly",
+      "participantIds": [
+        "fl8XXn3Rf1Y",
+        "fhwGeiIAgaY"
+      ],
+      "organizerId": "RhhXOQ1hsXc",
+      "organizerName": "hector",
+      "status": "Cancelled",
+      "isDeleted": true,
+      "id": "1"
+    },
+    {
+      "title": "backend flow",
+      "description": "backend tech flow and server requirement",
+      "date": "2026-06-18",
+      "time": "09:00",
+      "duration": "30 minutes",
+      "room": "Floor 3 - Room 301",
+      "type": "Weekly",
+      "participantIds": [
+        "fl8XXn3Rf1Y",
+        "g8GME_7hXXk",
+        "GHV2j0XJrJA",
+        "ipJ4kdG"
+      ],
+      "organizerId": "RhhXOQ1hsXc",
+      "organizerName": "hector",
+      "status": "Scheduled",
+      "isDeleted": false,
+      "id": "2"
+    },
+    {
+      "title": "Client requirement",
+      "description": "Client requirements and addtional feature",
+      "date": "2026-06-24",
+      "time": "11:00",
+      "duration": "45 minutes",
+      "room": "Floor 2 - Room 201",
+      "type": "Weekly",
+      "participantIds": [
+        "fl8XXn3Rf1Y",
+        "g8GME_7hXXk",
+        "GHV2j0XJrJA"
+      ],
+      "organizerId": "fhwGeiIAgaY",
+      "organizerName": "lalo",
+      "status": "Scheduled",
+      "isDeleted": false,
+      "id": "lRNa5-l3_KY"
+    },
+    {
+      "title": "Research",
+      "description": "Market and research",
+      "date": "2026-06-18",
+      "time": "11:40",
+      "duration": "30 minutes",
+      "room": "Floor 1 - Room 101",
+      "type": "One Time",
+      "participantIds": [
+        "fl8XXn3Rf1Y",
+        "g8GME_7hXXk",
+        "PRdmuT9Qe4I"
+      ],
+      "organizerId": "RhhXOQ1hsXc",
+      "organizerName": "hector",
+      "status": "Completed",
+      "isDeleted": false,
+      "id": "3fjW0NYBCkU"
+    },
+    {
+      "title": "Machine setup",
+      "description": "Admin requirements ",
+      "date": "2026-06-18",
+      "time": "11:42",
+      "duration": "25 minutes",
+      "room": "Floor 2 - Room 201",
+      "type": "One Time",
+      "participantIds": [
+        "g8GME_7hXXk",
+        "uDf1LP4QHYk"
+      ],
+      "organizerId": "fhwGeiIAgaY",
+      "organizerName": "lalo",
+      "status": "Cancelled",
+      "isDeleted": false,
+      "id": "56cC0WNS8Bs"
+    },
+    {
+      "title": "Weekly Team Sync",
+      "description": "Weekly progress review and blocker discussion.",
+      "date": "2026-06-22",
+      "time": "09:30",
+      "duration": "30 minutes",
+      "room": "Floor 1 - Room 101",
+      "type": "Weekly",
+      "participantIds": [
+        "g8GME_7hXXk",
+        "ipJ4kdG",
+        "uDf1LP4QHYk"
+      ],
+      "organizerId": "RhhXOQ1hsXc",
+      "organizerName": "hector",
+      "status": "Scheduled",
+      "isDeleted": false,
+      "id": "ClKTiW7CErQ"
+    },
+    {
+      "title": "Client Requirement Gathering",
+      "description": "Discuss client expectations, project scope, and deliverables.",
+      "date": "2026-06-25",
+      "time": "17:30",
+      "duration": "90 minutes",
+      "room": "Floor 3 - Room 301",
+      "type": "One Time",
+      "participantIds": [
+        "g8GME_7hXXk",
+        "ipJ4kdG",
+        "uDf1LP4QHYk"
+      ],
+      "organizerId": "fhwGeiIAgaY",
+      "organizerName": "lalo",
+      "status": "Scheduled",
+      "isDeleted": false,
+      "id": "0-2g1XumkQk"
+    },
+    {
+      "title": "Sprint Planning Session",
+      "description": "Plan tasks and estimate work for the upcoming sprint.",
+      "date": "2026-06-30",
+      "time": "14:30",
+      "duration": "45 minutes",
+      "room": "Floor 2 - Room 202",
+      "type": "Weekly",
+      "participantIds": [
+        "fl8XXn3Rf1Y",
+        "RhhXOQ1hsXc",
+        "PRdmuT9Qe4I"
+      ],
+      "organizerId": "fhwGeiIAgaY",
+      "organizerName": "lalo",
+      "status": "Scheduled",
+      "isDeleted": false,
+      "id": "sWl4Y1SVPvs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

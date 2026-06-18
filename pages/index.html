@@ -1,0 +1,75 @@
+<!doctype html>
+<html data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MeetFlow Scheduler</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="../styles/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Home page navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="brand-icon"><i class="bi bi-calendar2-week"></i></span>
+          <span>MeetFlow</span>
+        </a>
+        <div class="d-flex align-items-center gap-2 theme-toggle">
+          <button class="btn btn-outline-brand" type="button" title="Dark theme" data-theme-toggle>
+            <i class="bi bi-moon-stars"></i>
+          </button>
+
+           <a href="login.html" class="btn btn-outline-brand">
+        <i class="bi bi-box-arrow-in-right me-1"></i>
+        Login
+      </a>
+
+      <!-- Sign Up Button -->
+      <a href="register.html" class="btn btn-brand">
+        <i class="bi bi-person-plus me-1"></i>
+        Sign Up
+      </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main landing section -->
+    <main class="hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+         
+          <div class="col-lg-6">
+            <div class="hero-visual"></div>
+          </div>
+
+           <div class="col-lg-6">
+            <div class="brand-mark d-flex align-items-center gap-2 mb-4">
+              <span class="brand-icon"><i class="bi bi-building-check"></i></span>
+              <span>Company Scheduler</span>
+            </div>
+            <h1>Meeting Scheduler</h1>
+            <p class="mt-4">Welcome to a focused workspace for planning meetings, assigning participants, tracking status, and keeping every employee’s calendar view clean.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a href="login.html" class="btn btn-brand btn-lg">
+                <i class="bi bi-box-arrow-in-right me-2"></i>Login
+              </a>
+              <a href="register.html" class="btn btn-outline-brand btn-lg">
+                <i class="bi bi-person-plus me-2"></i>Sign Up
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Theme script controls the light/dark button. -->
+  <script src="../js/theme.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

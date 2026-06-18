@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="auth-page">
+
+    
+<nav class="navbar navbar-expand-lg">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="brand-icon"><i class="bi bi-calendar2-week"></i></span>
+          <span>MeetFlow</span>
+        </a>
+        <div class="d-flex align-items-center gap-2 theme-toggle">
+          <button class="btn btn-outline-brand" type="button" title="Dark theme" data-theme-toggle>
+            <i class="bi bi-moon-stars"></i>
+          </button>
+               <a href="login.html" class="btn btn-outline-brand">
+        <i class="bi bi-box-arrow-in-right me-1"></i>
+        Login
+      </a>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+    <main class="auth-shell auth-shell-tall">
+        <section class="auth-card register-card">
+<form id="registerForm" novalidate>
+
+    <div class="auth-intro">
+        <span class="brand-icon"><i class="bi bi-person-plus"></i></span>
+        <h1>Create account</h1>
+        <p>Register your employee profile to access MeetFlow.</p>
+    </div>
+
+    <div class="row g-3">
+    <div class="col-md-6">
+        <label for="name" class="form-label" >FULL NAME</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" oninput="validateRegisterForm()" required>
+        <div class="field-message" id="nameMessage"></div>
+    </div>
+
+     <div class="col-md-6">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control" name="email" placeholder="Enter your email" oninput="validateRegisterForm()" required>
+        <div class="field-message" id="emailMessage"></div>
+    </div>
+
+     <div class="col-md-6">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" class="form-control" name="password" placeholder="Enter password" oninput="validateRegisterForm()" required>
+        <div class="field-message" id="passwordMessage"></div>
+    </div>
+
+     <div class="col-md-6">
+        <label for="confirm_password" class="form-label">Confirm Password</label>
+        <input type="password" id="confirm_password" class="form-control" name="confirm_password" placeholder="Confirm the password" oninput="validateRegisterForm()" required>
+        <div class="field-message" id="confirmPasswordMessage"></div>
+    </div>
+
+
+    <div class="col-md-6">
+    <label for="department" class="form-label">Department</label>
+    <select class="form-select" id="department" name="department" oninput="validateRegisterForm()" required>
+        <option value="">Select Department</option>
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+        <option value="Marketing">Marketing</option>
+    </select>
+    <div class="field-message" id="departmentMessage"></div>
+</div>
+
+<div class="col-md-6">
+    <label for="designation" class="form-label">Designation</label>
+    <select class="form-select" id="designation" name="designation" oninput="validateRegisterForm()" required>
+        <option value="">Select Designation</option>
+        <option value="Software Developer">Software Developer</option>
+        <option value="Tester">Tester</option>
+        <option value="Team Lead">Team Lead</option>
+        <option value="Accountant">Accountant</option>
+        <option value="Marketing Executive">Marketing Executive</option>
+    </select>
+    <div class="field-message" id="designationMessage"></div>
+</div>
+
+<div class="col-12">
+    <label for="doj" class="form-label">Date Of Join</label>
+    <input type="date" class="form-control" id="doj" name="doj" oninput="validateRegisterForm()" required>
+    <div class="field-message" id="dojMessage"></div>
+</div>
+
+
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-brand w-100" id="registerBtn">Register</button>
+    </div>
+    </div>
+
+</form>
+</section>
+</main>
+
+    <!-- bootstrap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/register.js"></script>
+</body>
+
+</html>

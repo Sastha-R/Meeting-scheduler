@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body class="auth-page">
+
+
+<nav class="navbar navbar-expand-lg">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="brand-icon"><i class="bi bi-calendar2-week"></i></span>
+          <span>MeetFlow</span>
+        </a>
+        <div class="d-flex align-items-center gap-2 theme-toggle">
+          <button class="btn btn-outline-brand" type="button" title="Dark theme" data-theme-toggle>
+            <i class="bi bi-moon-stars"></i>
+          </button>
+           <a href="register.html" class="btn btn-brand">
+        <i class="bi bi-person-plus me-1"></i>
+        Sign Up
+      </a>
+        </div>
+      </div>
+    </nav>
+
+
+
+<main class="auth-shell">
+    <section class="auth-card">
+        <div class="auth-intro">
+            <span class="brand-icon"><i class="bi bi-shield-lock"></i></span>
+            <h1>Welcome back</h1>
+            <p>Sign in to manage your meetings and daily schedule.</p>
+        </div>
+
+        <form id="loginForm" novalidate>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="name@example.com" oninput="validateLoginForm()">
+                <div class="field-message" id="emailMessage"></div>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter password" oninput="validateLoginForm()">
+                <div class="field-message" id="passwordMessage"></div>
+            </div>
+
+            <button type="submit" class="btn btn-brand w-100">Login</button>
+        </form>
+    </section>
+</main>
+
+
+       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+</html>
